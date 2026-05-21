@@ -1,0 +1,53 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build files
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest
+.pytest_cache/
+
+# Uploaded files (optional)
+uploads/
+
+# Model/cache files
+models/
+.cache/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Next.js
+node_modules/
+.next/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

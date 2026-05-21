@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --brand: #4f72f5;
+  }
+
+  /* Smooth scrolling in chat window */
+  .chat-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Citation chip hover */
+  .citation-chip:hover {
+    background-color: #e0e9ff;
+  }
+}
+
+/* Typing cursor animation for streaming */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.typing-cursor::after {
+  content: "▍";
+  display: inline-block;
+  animation: blink 0.7s step-end infinite;
+  color: #4f72f5;
+  margin-left: 1px;
+}
+
+/* Progress bar animation */
+@keyframes progress-indeterminate {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+.progress-bar {
+  animation: progress-indeterminate 1.4s ease-in-out infinite;
+}
